@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Рандомна сторінка | <%= title %></title>
+    <link rel="stylesheet" href="styles/contacts.css">
+</head>
+<body>
+    <header>
+        <%- include('./partials/nav.ejs')%>
+        <h1>Контакти</h1>
+    </header>
+    <main>
+        <ul class="contacts-list">
+            <% if (contacts.length) { %>
+                <% contacts.forEach(({link, name}) => { %>
+                    <li>
+                        <a href="<%= link%>"><%= name%></a>
+                    </li>
+                <% }) %>
+            <% }%>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2025 Блог</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Рандомна сторінка | <%= title %></title>
+    <link rel="stylesheet" href="styles/add-post.css">
+</head>
+<body>
+    <header>
+        <%- include('./partials/nav.ejs')%>
+        <h1>Створити новий пост</h1>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <label for="title">Заголовок:</label><br>
+            <input type="text" id="title" name="title"><br><br>
+
+            <label for="author">Автор:</label><br>
+            <input type="text" id="author" name="author"><br><br>
+
+            <label for="content">Текст поста:</label><br>
+            <textarea id="content" name="content" rows="8" cols="50"></textarea><br><br>
+
+            <button type="submit">Опублікувати</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Блог</p>
+    </footer>
+</body>
+</html>

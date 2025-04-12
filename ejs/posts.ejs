@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Рандомна сторінка | <%= title %></title>
+    <link rel="stylesheet" href="styles/posts.css">
+</head>
+<body>
+    <header>
+        <%- include('./partials/nav.ejs')%>
+        <h1>Список постів</h1>
+    </header>
+    <main>
+        <section>
+            <a href="/post" class="post-link">
+                <article>
+                    <h2>Перший пост</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, reiciendis veniam. Enim, nobis explicabo architecto neque recusandae quidem ratione ab.</p>
+                </article>
+            </a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Блог</p>
+    </footer>
+</body>
+</html>
