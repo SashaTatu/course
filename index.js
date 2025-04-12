@@ -9,7 +9,7 @@ const PORT = 3000;
 
 const createPath = (page) => path.resolve(__dirname, 'ejs', `${page}.ejs`)
 
-app.listen(PORT, '127.0.0.1', () => {
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`Сервер працює на http://localhost:${PORT}`)
   });
 
