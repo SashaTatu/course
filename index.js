@@ -9,11 +9,9 @@ const PORT = 3000;
 
 const createPath = (page) => path.resolve(__dirname, 'ejs', `${page}.ejs`)
 
-app.listen(PORT, '127.0.0.1', (error) => {
-    error
-        ? console.log(error)
-        : console.log(`Сервер запущен на http://localhost:${PORT}`);
-});
+app.listen(PORT, '127.0.0.1', () => {
+    console.log(`Сервер працює на http://localhost:${PORT}`)
+  });
 
 app.use('/styles', express.static(path.join(__dirname, 'styles')));
 
